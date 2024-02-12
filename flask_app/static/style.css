@@ -1,0 +1,56 @@
+*{
+    margin: auto;
+    padding: 0;
+}
+
+.flex{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    ;
+}
+
+
+main{max-width: 80%;}
+
+.usercard{
+    line-height: 50px;
+    font-size: 20px;
+    border: black solid 2px;
+    align-self: flex-start;
+    padding: 20px;
+}
+
+.links{
+    margin-top: 20px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+a{
+        text-decoration: none;
+}
+h1{
+    margin-top:20px;
+    margin-bottom: 30px;
+}
+form {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+input[type='text']{
+    width: 400px;
+    height: 25px;
+    font-size: 18px;
+}
+
+input[type='submit']{
+    color: white;
+    background-color: darkcyan;
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-left: auto;
+}

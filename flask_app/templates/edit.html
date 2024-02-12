@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <main>  
+    <div class="flex" style="justify-content: space-between;">
+        <h1>Edit User: {{one_user.id}}</h1>
+        <a href="/" class="links link"> Home</a>
+    </div>
+        <form action="/edit/update" method="post">
+            <label for="first_name" >First Name:</label><br>
+            <input type="text"name="first_name" value="{{one_user.first_name}}"><br>
+            <label>Last Name:</label><br>
+            <input type="text"name="last_name" for="last_name" value="{{one_user.last_name}}"><br>
+            <label for="email" >Email:</label><br>
+            <input type="text" name="email" for="last_name" value="{{one_user.email}}"><br>
+            <input type="hidden" name= 'id' value="{{one_user.id}}">
+            <input type="submit" value="update">
+        </form>
+    </main>
+</body>
+</html>

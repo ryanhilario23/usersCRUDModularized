@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <Main>
+    <div class="flex">
+        <h1>User {{one_user.id}}</h1>
+        <a href="/" class="links link"> Home</a>
+    </div>
+    <div class="usercard">
+        <p>Full Name: {{one_user.first_name}} {{one_user.last_name}} </p>
+        <p>Email: {{one_user.email}}</p>
+        <p>Created On:{{one_user.created_at}}</p>
+        <p>Last Updated:{{one_user.updated_at}}</p>
+    </div>
+    <div class="links link">
+        <a href="/edit/{{one_user.id}}">Edit</a> |
+        <a href="/user/delete/{{one_user.id}}">Delete</a>
+    </div>
+    </Main>
+</body>
+</html>
